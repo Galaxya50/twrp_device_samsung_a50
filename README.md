@@ -1,4 +1,4 @@
-## Recovery Device Tree for the Samsung Galaxy M30s
+## Recovery Device Tree for the Samsung Galaxy A50
 
 ## How-to compile it:
 
@@ -6,5 +6,5 @@ To build:
 
 ```sh
 . build/envsetup.sh
-lunch omni_m30s-eng
+lunch omni_a50-eng
 make recoveryimage

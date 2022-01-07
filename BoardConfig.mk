@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m30s
+DEVICE_PATH := device/samsung/a50
 
 # Architecture
 TARGET_ARCH := arm64
@@ -39,8 +39,8 @@ ALLOW_MISSING_DEPENDENCIES=true
 
 # Bootloader
 BOARD_VENDOR := samsung
-TARGET_SOC := exynos9611
-TARGET_BOOTLOADER_BOARD_NAME := universal9611
+TARGET_SOC := exynos9610
+TARGET_BOOTLOADER_BOARD_NAME := universal9610
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -52,7 +52,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
 BOARD_KERNEL_IMAGE_NAME := zImage
 
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSE30A002RU
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
